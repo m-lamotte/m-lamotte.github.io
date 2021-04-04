@@ -1,0 +1,101 @@
+/* Removes all of the CSS defaults in the browser*/
+/* border-box includes both padding and border into the total width and height (w3schools) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+/* TODO: Change font later - import from Google Fonts */
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2.0em;
+}
+
+h1, h2, h3 {
+    padding: 30px;
+}
+
+/* All the navigation bar stuff for the top */
+#navigation-bar { 
+    background-color: #3B765D;
+    opacity: 0.8;
+    overflow: auto;
+    padding: 0px 40px;
+}
+
+#navigation-bar a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#navigation-bar h1 { 
+    float:left;
+}
+
+#navigation-bar ul { 
+    float: right;
+    padding: 30px;
+    list-style: none;
+}
+
+#navigation-bar ul li { 
+    float: left;
+    padding-left: 80px;
+}
+
+/* Introduction on index.html, within section tag */
+#page-introduction {
+    padding: 120px 60px 120px 60px;
+}
+
+/* Portfolio container, within section tag */
+/* TODO: Works perfectly, but review flexbox */
+.portfolio {
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio li {
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.portfolio li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* IDs in portfolio container */
+/* TODO: Add stylish hover effects for these project items */
+#project1 {
+    width: 400px;
+    height: 300px;
+    background-color: #3D7D9C;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#project2 {
+    width: 400px;
+    height: 300px;
+    background-color: #649DB8;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#project3 {
+    width: 400px;
+    height: 300px;
+    background-color: #16467B;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* TODO: This will become a graphic - a personal brand logo */
+.brand-logo {
+
+}
