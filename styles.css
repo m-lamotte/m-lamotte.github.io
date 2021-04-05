@@ -49,6 +49,10 @@ h1, h2, h3 {
     padding: 120px 60px 120px 60px;
 }
 
+#about-section {
+    padding: 120px 60px 120px 60px;
+}
+
 /* Portfolio container, within section tag */
 /* TODO: Works perfectly, but review flexbox */
 .portfolio {
