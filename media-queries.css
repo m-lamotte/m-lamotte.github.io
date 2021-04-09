@@ -1,0 +1,58 @@
+
+/* Will work with most smartphones, God willing. */
+@media(max-width: 768px) {
+    
+    nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #3B765D;
+        opacity: 0.8;
+        overflow: auto;
+        padding: 0px 30px;
+    }
+    
+    /* NOTE: Padding right is a very slight adjustment for the logo, just by feel, nothing else */
+    .brand-logo {
+        display: flex;
+        justify-content: center;
+        padding-right: 5px;
+    }
+
+    #navigation-bar ul { 
+        display: flex;
+        margin: 0px;
+        justify-content: center;
+        padding: 10px;
+        list-style: none;
+    }
+
+    #navigation-bar ul li {
+        display: flex;
+        padding: 0px 20px 20px 20px;
+        justify-content: space-around;
+    }
+
+    /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
+    .portfolio {
+        padding: 150px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolio li {
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .portfolio li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+}
