@@ -9,14 +9,14 @@
         background-color: #3B765D;
         opacity: 0.8;
         overflow: auto;
-        padding: 0px 30px;
     }
     
     /* NOTE: Padding right is a very slight adjustment for the logo, just by feel, nothing else */
     .brand-logo {
         display: flex;
         justify-content: center;
-        padding-right: 5px;
+        padding-right: 0px;
+        padding-bottom: 5px;
     }
 
     #navigation-bar ul { 
@@ -29,7 +29,7 @@
 
     #navigation-bar ul li {
         display: flex;
-        padding: 0px 20px 20px 20px;
+        padding: 0px 20px 5px 20px;
         justify-content: space-around;
     }
 
