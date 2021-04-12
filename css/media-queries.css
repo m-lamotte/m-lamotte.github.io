@@ -55,4 +55,16 @@
         color: #FFFFFF;
     }
 
+    
+    /* Footer section */
+    footer .footer {
+        display: flex;
+        flex-shrink: 0;
+        padding-left: 60px;
+
+    }
+
+    footer .footer a img {
+        width: 35%; 
+    }
 }

@@ -6,10 +6,15 @@
     box-sizing: border-box; 
 }
 
-/* TODO: Change font later - import from Google Fonts */
 html, body {
     font-family: 'Inter', bold;
+    min-height: 100vh;
     line-height: 2.0em;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -60,9 +65,10 @@ nav {
     display: flex;
 }
 
-
-/* Introduction on index.html, within section tag */
-#page-introduction {
+/* NOTE: Covers ALL main sections for each webpage on the site. */
+/* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
+section {
+    flex: 1;
     padding: 120px 60px 120px 60px;
 }
 
@@ -75,6 +81,7 @@ nav {
 .portfolio {
     padding: 150px;
     display: flex;
+    flex: 1;
     justify-content: center;
 }
 
@@ -118,4 +125,18 @@ nav {
     background-color: #16467B;
     margin: 20px;
     border-radius: 15px;
+}
+
+/* Footer section */
+/* NOTE: padding-left is kind of a hacky solution to centering, but works across queries so it's fine... for now */
+/* NOTE: review 'flex-shrink' - this is working in tandem with 'flex: 1' in section to allow for stick footer */
+footer .footer {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    padding-left: 38px;
+}
+
+footer .footer a img {
+    width: 35%; 
 }
