@@ -8,6 +8,7 @@
 
 html, body {
     font-family: 'Inter', bold;
+    font-size: .95rem;
     min-height: 100vh;
     line-height: 2.0em;
 }
@@ -79,7 +80,7 @@ section {
 /* Portfolio container, within section tag */
 /* TODO: Works perfectly, but review flexbox */
 .portfolio {
-    padding: 150px;
+    padding: 0px;
     display: flex;
     flex: 1;
     justify-content: center;
@@ -139,4 +140,10 @@ footer .footer {
 
 footer .footer a img {
     width: 35%; 
+}
+
+/* Some final components, may be refactored into a separate css file in the futre*/
+.card {
+    padding: 15px;
+    box-shadow: rgba(36, 59, 59, 0.2) 0px 0px 15px 5px;
 }
