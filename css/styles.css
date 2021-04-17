@@ -106,10 +106,13 @@ section {
 
 .box {
     text-align: center;
-
+    border-top: #385278 solid;
+    border-bottom: #335278 solid;
+    padding: 0px;
 }
 
 .box img {
+    opacity: .6;
     width: 100%;
     height: auto;
 }
