@@ -1,5 +1,4 @@
 
-/* Will work with most smartphones, God willing. */
 @media(max-width: 768px) {
     
     nav { 
@@ -11,7 +10,7 @@
         overflow: auto;
     }
     
-    /* NOTE: Padding right is a very slight adjustment for the logo, just by feel, nothing else */
+    /* NOTE: padding-right is a very slight adjustment for the logo, just by feel, nothing else */
     .brand-logo {
         display: flex;
         justify-content: center;
@@ -31,6 +30,44 @@
         display: flex;
         padding: 0px 20px 5px 20px;
         justify-content: space-around;
+    }
+
+    /* NOTE: Covers ALL main sections for each webpage on the site. */
+    /* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
+    section {
+        flex: 1;
+        padding: 120px 60px 120px 60px;
+    }
+
+    .intro-statement {
+        font-family: 'Encode Sans', sans-serif;
+        font-size: 3rem;
+        padding-bottom: 4rem;
+    }
+
+    .personal-statement {
+        padding-bottom: 4rem;
+    }
+    .about-section {
+        padding: 120px 60px 120px 60px;
+    }
+
+    /* Where the sketches will go, .box items are children of .sketeches-section */
+    .sketches-section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .box {
+        text-align: center;
+        padding: 4rem;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
     }
 
     /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
@@ -55,12 +92,11 @@
         color: #FFFFFF;
     }
 
-    
     /* Footer section */
     footer .footer {
         display: flex;
         flex-shrink: 0;
-        padding-left: 60px;
+        padding-left: 48px;
     }
 
     footer .footer a img {

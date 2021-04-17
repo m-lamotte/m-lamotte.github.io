@@ -73,12 +73,48 @@ section {
     padding: 120px 60px 120px 60px;
 }
 
-#about-section {
+/* NOTE: Overriding some stuff for section, just for index.html page*/
+.index-section {
+    padding: 60px 0px 0px 0px;
+}
+
+.intro-statement {
+    opacity: .9;
+    padding: 60px 60px 0px 60px;
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+.personal-statement {
+    padding: 0px 60px 0px 60px;
+    padding-bottom: 4rem;
+}
+
+.about-section {
     padding: 120px 60px 120px 60px;
 }
 
+/* Where the sketches will go, .box items are children of .sketeches-section */
+.sketches-section {
+    padding: 0px;
+    padding-bottom: 4rem;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.box {
+    text-align: center;
+
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
 /* Portfolio container, within section tag */
-/* TODO: Works perfectly, but review flexbox */
 .portfolio {
     padding: 0px;
     display: flex;
@@ -135,15 +171,9 @@ footer .footer {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    padding-left: 38px;
+    padding-left: 48px;
 }
 
 footer .footer a img {
     width: 35%; 
-}
-
-/* Some final components, may be refactored into a separate css file in the futre*/
-.card {
-    padding: 15px;
-    box-shadow: rgba(36, 59, 59, 0.2) 0px 0px 15px 5px;
 }
