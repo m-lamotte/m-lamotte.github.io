@@ -1,5 +1,5 @@
 
-@media(max-width: 768px) {
+@media(max-width: 600px) {
     
     nav { 
         display: flex;
@@ -32,24 +32,24 @@
         justify-content: space-around;
     }
 
-    /* NOTE: Covers ALL main sections for each webpage on the site. */
-    /* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
+    /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
     section {
         flex: 1;
-        padding: 120px 60px 120px 60px;
+        padding: 120px 40px 120px 40px;
     }
 
     .intro-statement {
         font-family: 'Encode Sans', sans-serif;
         font-size: 3rem;
-        padding-bottom: 4rem;
+        padding: 60px 40px 60px 40px;
     }
 
     .personal-statement {
-        padding-bottom: 4rem;
+        padding: 0px 40px 60px 40px;
     }
+
     .about-section {
-        padding: 120px 60px 120px 60px;
+        padding: 120px 40px 120px 40px;
     }
 
     /* Where the sketches go, .box items are children of .sketeches-section */
@@ -110,13 +110,13 @@
     }
     
     footer .footer a img {
-        width: 40%;
+        width: 30%;
     }
     
     /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
     .copyright-overlay {
-        font-size: .7rem;
         position: absolute;
+        font-size: .5rem;
         right: 15px;
         top: 12px;
     }
