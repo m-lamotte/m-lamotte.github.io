@@ -52,7 +52,7 @@
         padding: 120px 60px 120px 60px;
     }
 
-    /* Where the sketches will go, .box items are children of .sketeches-section */
+    /* Where the sketches go, .box items are children of .sketeches-section */
     .sketches-section {
         display: flex;
         flex-direction: column;
@@ -95,11 +95,18 @@
     /* Footer section */
     footer .footer {
         display: flex;
-        flex-shrink: 0;
-        padding-left: 48px;
+        justify-content: center;
+        overflow: auto;
+    }
+
+    footer .footer a {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        overflow: auto;
     }
 
     footer .footer a img {
-        width: 35%; 
+        width: 40%;
     }
 }
