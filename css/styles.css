@@ -172,6 +172,7 @@ section {
 /* NOTE: review 'flex-shrink' - this is working in tandem with 'flex: 1' in section to allow for stick footer */
 footer .footer {
     display: flex;
+    position: relative;
     justify-content: center;
     overflow: auto;
 }
@@ -185,4 +186,12 @@ footer .footer a {
 
 footer .footer a img {
     width: 40%;
+}
+
+/* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
+/* TODO: will probably have to make this more responsive for thinner phone screens, but I'll test once I've pushed it */
+.copyright-overlay {
+    position: absolute;
+    right: 50px;
+    top: 10px;
 }
