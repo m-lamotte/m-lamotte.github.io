@@ -189,7 +189,6 @@ footer .footer a img {
 }
 
 /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
-/* TODO: will probably have to make this more responsive for thinner phone screens, but I'll test once I've pushed it */
 .copyright-overlay {
     position: absolute;
     right: 50px;

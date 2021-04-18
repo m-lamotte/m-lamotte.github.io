@@ -60,7 +60,9 @@
         justify-content: center;
     }
     
+    /* NOTE: currently hiding all images! work on this later and add a single, nice image to display */
     .box {
+        display: none;
         text-align: center;
         padding: 4rem;
     }
@@ -95,18 +97,27 @@
     /* Footer section */
     footer .footer {
         display: flex;
+        position: relative;
         justify-content: center;
         overflow: auto;
     }
-
+    
     footer .footer a {
         display: flex;
         justify-content: center;
         padding: 10px 0px 10px 0px;
         overflow: auto;
     }
-
+    
     footer .footer a img {
         width: 40%;
+    }
+    
+    /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
+    .copyright-overlay {
+        font-size: .7rem;
+        position: absolute;
+        right: 15px;
+        top: 12px;
     }
 }
