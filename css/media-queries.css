@@ -9,20 +9,19 @@
         opacity: 0.8;
         overflow: auto;
     }
-    
-    /* NOTE: padding-right is a very slight adjustment for the logo, just by feel, nothing else */
+
     .brand-logo {
         display: flex;
         justify-content: center;
-        padding-right: 0px;
         padding-bottom: 5px;
     }
 
+    /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
     #navigation-bar ul { 
         display: flex;
         margin: 0px;
         justify-content: center;
-        padding: 10px;
+        padding: 10px 35px 10px 10px;
         list-style: none;
     }
 
