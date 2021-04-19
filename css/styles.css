@@ -18,10 +18,6 @@ body {
     flex-direction: column;
 }
 
-h1 {
-    padding: 20px 15px 15px 15px;
-}
-
 /* All the navigation bar stuff for the top */
 nav { 
     display: flex;
@@ -32,9 +28,22 @@ nav {
     padding: 0px 30px;
 }
 
+h1 {
+    padding: 20px 15px 15px 15px;
+}
+
 #navigation-bar a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+/* TODO: Once again, I am tasked with the image scaling problem. But... it needs to be high-resolution. */
+.brand-logo a {
+    display: flex;
+}
+
+.brand-logo a img {
+    max-width: 23%;
 }
 
 /* TODO: image works fine when low-pixel-count image is unaltered, but I need to find out how to scale a high resolution logo, as current solution is not ideal */
@@ -60,10 +69,6 @@ nav {
 
 #navigation-bar ul li:hover {
     text-decoration: underline;
-}
-
-.brand-logo {
-    display: flex;
 }
 
 /* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
@@ -173,7 +178,7 @@ footer .footer {
     display: flex;
     position: relative;
     justify-content: center;
-    overflow: auto;
+    overflow: auto; 
 }
 
 footer .footer a {

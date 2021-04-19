@@ -1,6 +1,7 @@
+/* TODO: Refactor! Lots of redundant code in both of these media queries, which are nearly identical */
 
-@media(max-width: 600px) {
-    
+/* Smartphones... approximately */
+@media screen and (max-width:400px) {
     nav { 
         display: flex;
         flex-direction: column;
@@ -10,10 +11,15 @@
         overflow: auto;
     }
 
-    .brand-logo {
+    .brand-logo a {
         display: flex;
         justify-content: center;
-        padding-bottom: 5px;
+        overflow: auto;
+    }
+
+   
+    .brand-logo a img {
+        max-width: 40%;
     }
 
     /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
@@ -39,7 +45,147 @@
 
     .intro-statement {
         font-family: 'Encode Sans', sans-serif;
-        font-size: 3rem;
+        font-size: 2rem;
+        padding: 60px 40px 60px 40px;
+    }
+
+    .personal-statement {
+        padding: 0px 40px 60px 40px;
+    }
+
+    .about-section {
+        padding: 120px 40px 120px 40px;
+    }
+
+    /* Where the sketches go, .box items are children of .sketeches-section */
+    .sketches-section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+    }
+    
+    /* NOTE: currently hiding all images! work on this later and add a single, nice image to display */
+    .box {
+        display: none;
+        text-align: center;
+        padding: 4rem;
+    }
+
+    .box img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolio li {
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .portfolio li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+    
+    /* height/width are shrunk 20% for this view */
+    #project1 {
+        width: 320px;
+        height: 240px;
+    }
+    #project2 {
+        width: 320px;
+        height: 240px;
+    }
+    #project3 {
+        width: 320px;
+        height: 240px;
+    }
+
+    /* Footer section */
+    footer .footer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    footer .footer a {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        overflow: auto;
+    }
+    
+    footer .footer a img {
+        width: 30%;
+    }
+    
+    /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
+    .copyright-overlay {
+        position: absolute;
+        font-size: .5rem;
+        right: 15px;
+        top: 8px;
+    }
+}
+
+/* Tablets and alike devices */
+@media screen and (min-width: 400px) and (max-width:700px) {   
+    nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #3B765D;
+        opacity: 0.8;
+        overflow: auto;
+    }
+
+    .brand-logo a {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+
+   
+    .brand-logo a img {
+        max-width: 25%;
+    }
+
+    /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
+    #navigation-bar ul { 
+        display: flex;
+        margin: 0px;
+        justify-content: center;
+        padding: 10px 35px 10px 10px;
+        list-style: none;
+    }
+
+    #navigation-bar ul li {
+        display: flex;
+        padding: 0px 20px 5px 20px;
+        justify-content: space-around;
+    }
+
+    /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
+    section {
+        flex: 1;
+        padding: 120px 40px 120px 40px;
+    }
+
+    .intro-statement {
+        font-family: 'Encode Sans', sans-serif;
+        font-size: 2rem;
         padding: 60px 40px 60px 40px;
     }
 
@@ -98,7 +244,7 @@
         display: flex;
         position: relative;
         justify-content: center;
-        overflow: auto;
+        overflow: hidden;
     }
     
     footer .footer a {
@@ -117,6 +263,6 @@
         position: absolute;
         font-size: .5rem;
         right: 15px;
-        top: 12px;
+        top: 8px;
     }
 }
