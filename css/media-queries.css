@@ -1,7 +1,7 @@
 /* TODO: Refactor! Lots of redundant code in both of these media queries, which are nearly identical */
 
 /* Smartphones... approximately */
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     nav { 
         display: flex;
         flex-direction: column;
@@ -19,7 +19,7 @@
 
    
     .brand-logo a img {
-        max-width: 40%;
+        max-width: 35%;
     }
 
     /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
@@ -141,7 +141,7 @@
 }
 
 /* Tablets and alike devices */
-@media screen and (min-width: 400px) and (max-width:700px) {   
+@media screen and (min-width: 500px) and (max-width:700px) {   
     nav { 
         display: flex;
         flex-direction: column;
