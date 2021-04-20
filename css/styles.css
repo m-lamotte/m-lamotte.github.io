@@ -23,7 +23,7 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #3B765D;
-    opacity: 0.8;
+    opacity: 0.9;
     overflow: auto;
     padding: 0px 30px;
 }
