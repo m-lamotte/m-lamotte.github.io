@@ -1,6 +1,6 @@
 /* TODO: Refactor! Lots of redundant code in both of these media queries, which are nearly identical */
 
-/* Smartphones... approximately */
+/* SMARTPHONES */
 @media screen and (max-width:500px) {
     nav { 
         display: flex;
@@ -57,24 +57,17 @@
         padding: 120px 40px 120px 40px;
     }
 
-    /* Where the sketches go, .box items are children of .sketeches-section */
-    .sketches-section {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
-    }
-    
-    /* NOTE: currently hiding all images! work on this later and add a single, nice image to display */
-    .box {
+    /* Hiding images within .sketches-section to improve experience for tablets etc. */
+    .box:nth-child(3) {
         display: none;
-        text-align: center;
-        padding: 4rem;
     }
 
-    .box img {
-        width: 100%;
-        height: auto;
+    .box:nth-child(4) {
+        display: none;
+    }
+
+    .box:nth-child(5) {
+        display: none;
     }
 
     /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
@@ -140,7 +133,7 @@
     }
 }
 
-/* Smaller tablets/laptop screens */
+/* SOME TABLETS / SMALL LAPTOPS */
 @media screen and (min-width: 500px) and (max-width:700px) {   
     nav { 
         display: flex;
@@ -197,24 +190,9 @@
         padding: 120px 40px 120px 40px;
     }
 
-    /* Where the sketches go, .box items are children of .sketeches-section */
-    .sketches-section {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
-    }
-    
-    /* NOTE: currently hiding all images! work on this later and add a single, nice image to display */
-    .box {
+    /* Hiding images within .sketches-section to improve experience for tablets etc. */
+    .box:nth-child(3) {
         display: none;
-        text-align: center;
-        padding: 4rem;
-    }
-
-    .box img {
-        width: 100%;
-        height: auto;
     }
 
     /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
@@ -268,7 +246,7 @@
 }
 
 
-/* Tablets and alike devices */
+/* SOME LAPTOPS / SMALLER SCREENS */
 @media screen and (min-width: 700px) and (max-width:1100px) {   
     nav { 
         display: flex;
@@ -323,26 +301,6 @@
 
     .about-section {
         padding: 120px 40px 120px 40px;
-    }
-
-    /* Where the sketches go, .box items are children of .sketeches-section */
-    .sketches-section {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-        justify-content: center;
-    }
-    
-    /* NOTE: currently hiding all images! work on this later and add a single, nice image to display */
-    .box {
-        display: none;
-        text-align: center;
-        padding: 4rem;
-    }
-
-    .box img {
-        width: 100%;
-        height: auto;
     }
 
     /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */

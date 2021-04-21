@@ -99,7 +99,7 @@ section {
     padding: 120px 60px 120px 60px;
 }
 
-/* Where the sketches will go, .box items are children of .sketeches-section */
+/* Where the sketches will go, .box items are children of .sketches-section */
 .sketches-section {
     padding: 0px;
     padding-bottom: 4rem;
@@ -109,7 +109,6 @@ section {
 }
 
 .box {
-    text-align: center;
     border-top: #385278 solid;
     border-bottom: #335278 solid;
     padding: 0px;
