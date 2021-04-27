@@ -43,7 +43,7 @@ h1 {
 }
 
 .brand-logo a img {
-    max-width: 8%;
+    max-width: 17%;
 }
 
 /* TODO: image works fine when low-pixel-count image is unaltered, but I need to find out how to scale a high resolution logo, as current solution is not ideal */
