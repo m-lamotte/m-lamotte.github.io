@@ -8,7 +8,7 @@
 
 html, body {
     font-family: 'Inter', bold;
-    font-size: .95rem;
+    font-size: .97rem;
     min-height: 100vh;
     line-height: 2.0em;
 }
@@ -35,6 +35,13 @@ h1 {
 #navigation-bar a {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+#navigation-bar li a:hover {
+    color: #88DAF8;
+    opacity: .9;
+    filter: brightness(120%);
+
 }
 
 /* TODO: Once again, I am tasked with the image scaling problem. But... it needs to be high-resolution. */
