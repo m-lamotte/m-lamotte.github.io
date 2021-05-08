@@ -31,12 +31,6 @@
         list-style: none;
     }
 
-    #navigation-bar ul li {
-        display: flex;
-        padding: 0px 20px 5px 20px;
-        justify-content: space-around;
-    }
-
     /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
     section {
         flex: 1;
@@ -164,12 +158,6 @@
         list-style: none;
     }
 
-    #navigation-bar ul li {
-        display: flex;
-        padding: 0px 20px 5px 20px;
-        justify-content: space-around;
-    }
-
     /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
     section {
         flex: 1;
@@ -275,12 +263,6 @@
         justify-content: center;
         padding: 10px 20px 10px 10px;
         list-style: none;
-    }
-
-    #navigation-bar ul li {
-        display: flex;
-        padding: 0px 20px 5px 20px;
-        justify-content: space-around;
     }
 
     /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
