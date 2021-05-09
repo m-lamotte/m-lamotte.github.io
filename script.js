@@ -26,10 +26,6 @@ while (counter < 5) {
     counter++;
 }
 
-imageArray.forEach(image => {
-    console.log(image);
-});
-
 // Counter is for iterating through the elements by class name
 // getElementById() is best practice but I've stuck with this for the time being
 counter = 0;
