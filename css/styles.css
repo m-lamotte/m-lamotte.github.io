@@ -23,13 +23,17 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #3B765D;
-    opacity: 0.9;
+    opacity: 1;
     overflow: auto;
     padding: 0px 30px;
 }
 
 h1 {
     padding: 20px 15px 15px 15px;
+}
+
+li {
+    font-size: 1.1rem;
 }
 
 #navigation-bar a {
@@ -43,7 +47,8 @@ h1 {
 }
 
 .brand-logo a img {
-    max-width: 17%;
+    padding-bottom: 10px;
+    max-width: 25%;
 }
 
 /* TODO: image works fine when low-pixel-count image is unaltered, but I need to find out how to scale a high resolution logo, as current solution is not ideal */
@@ -70,12 +75,12 @@ h1 {
 to displace it. This prevents the the navbar from moving in the views created
 by the media queries.   */
 #navigation-bar li {
-    border-bottom: 1px solid transparent;
+    border-bottom: 2px solid transparent;
 }
 
 #navigation-bar li:hover {
-    border-bottom: 1px solid;
-    border-bottom-color: #88DAF8;
+    border-bottom: 2px solid;
+    border-bottom-color: #E8FFF3;
 }
 
 #navigation-bar li a {
@@ -94,6 +99,7 @@ by the media queries.   */
 /* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
 section {
     flex: 1;
+    font-size: 1.1rem;
     padding: 120px 60px 120px 60px;
 }
 
@@ -105,18 +111,26 @@ section {
 .intro-statement {
     opacity: .9;
     padding: 60px 60px 0px 60px;
-    font-family: 'Encode Sans', sans-serif;
-    font-size: 2.5rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3.5rem;
     padding-bottom: 4rem;
 }
 
 .personal-statement {
     padding: 0px 60px 0px 60px;
+    font-size: 1.1rem;
     padding-bottom: 4rem;
 }
 
 .about-section {
+    display: flex;
+    font-size: 1.1rem;
     padding: 120px 60px 120px 60px;
+}
+
+/* TODO: This will be where my -potentially- animated self-portrait will go */
+.self-portrait {
+  
 }
 
 /* Where the sketches go, .box items are children of .sketches-section */

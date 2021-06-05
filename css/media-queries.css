@@ -1,7 +1,8 @@
 /* TODO: Refactor! Lots of redundant code in both of these media queries, which are nearly identical */
 
 /* SMARTPHONES */
-@media screen and (max-width:500px) {
+@media screen and (max-width:480px) {
+     
     nav { 
         display: flex;
         flex-direction: column;
@@ -19,7 +20,7 @@
 
    
     .brand-logo a img {
-        max-width: 30%;
+        max-width: 20%;
     }
 
     /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
@@ -31,14 +32,7 @@
         list-style: none;
     }
 
-    /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
-    section {
-        flex: 1;
-        padding: 120px 40px 120px 40px;
-    }
-
     .intro-statement {
-        font-family: 'Encode Sans', sans-serif;
         font-size: 2rem;
         padding: 60px 40px 60px 40px;
     }
@@ -99,6 +93,11 @@
         height: 240px;
     }
 
+    section {
+        flex: 1;
+        padding: 120px 40px 120px 40px;
+    }
+    
     /* Footer section */
     footer .footer {
         display: flex;
@@ -128,13 +127,12 @@
 }
 
 /* SOME TABLETS / SMALL LAPTOPS */
-@media screen and (min-width: 500px) and (max-width:700px) {   
+@media screen and (min-width: 481px) and (max-width:700px) {   
     nav { 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: #3B765D;
-        opacity: 0.9;
         overflow: auto;
     }
 
@@ -146,7 +144,7 @@
 
    
     .brand-logo a img {
-        max-width: 20%;
+        max-width: 16%;
     }
 
     /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
@@ -158,14 +156,7 @@
         list-style: none;
     }
 
-    /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
-    section {
-        flex: 1;
-        padding: 120px 40px 120px 40px;
-    }
-
     .intro-statement {
-        font-family: 'Encode Sans', sans-serif;
         font-size: 2rem;
         padding: 60px 40px 60px 40px;
     }
@@ -205,6 +196,11 @@
         color: #FFFFFF;
     }
 
+    section {
+        flex: 1;
+        padding: 120px 40px 120px 40px;
+    }
+
     /* Footer section */
     footer .footer {
         display: flex;
@@ -235,13 +231,12 @@
 
 
 /* SOME LAPTOPS / SMALLER SCREENS */
-@media screen and (min-width: 700px) and (max-width:1100px) {   
+@media screen and (min-width: 701px) and (max-width:1100px) {   
     nav { 
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-color: #3B765D;
-        opacity: 0.9;
         overflow: auto;
     }
 
@@ -253,7 +248,7 @@
 
    
     .brand-logo a img {
-        max-width: 12%;
+        max-width: 10%;
     }
 
     /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
@@ -265,14 +260,7 @@
         list-style: none;
     }
 
-    /* NOTE: .section, .intro-statement, .personal-statement, .about-section have different padding than in styles.css */
-    section {
-        flex: 1;
-        padding: 120px 40px 120px 40px;
-    }
-
     .intro-statement {
-        font-family: 'Encode Sans', sans-serif;
         font-size: 2rem;
         padding: 60px 40px 60px 40px;
     }
@@ -305,6 +293,11 @@
     .portfolio li a {
         text-decoration: none;
         color: #FFFFFF;
+    }
+
+    section {
+        flex: 1;
+        padding: 120px 40px 120px 40px;
     }
 
     /* Footer section */

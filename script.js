@@ -10,6 +10,7 @@ let imageArray = [];
 let counter = 0;
 
 // TODO: Refactor this later, this way is clean-looking but quite slow
+
 // while loop for ensuring that non-repeating numbers are used
 while (counter < 5) {    
 
