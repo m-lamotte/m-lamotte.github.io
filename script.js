@@ -1,31 +1,32 @@
 // Creating image elements with a random number inserted via literals
-// Used to randomize the display of class .sketches-section, which is used to
-// Produce a continguous flowing image composed of separate images
+// Used to randomize the display of class .sketches-section
 
 function getRandomNum(max) {
     return Math.floor(Math.random() * max);
   }
 
+let randomNumArray = [];
 let imageArray = [];
 let counter = 0;
 
-// TODO: Refactor this later, this way is clean-looking but quite slow
 
-// while loop for ensuring that non-repeating numbers are used
+// while loop for generating unique random numbers, which are inserted into an array
 while (counter < 5) {    
 
     let newRandom = getRandomNum(5);
-    let newImg = `img/box${newRandom}.png`;
 
-    if (imageArray.includes(newImg)) {
+    if (randomNumArray.includes(newRandom)) {
         continue;
     }
     else {
-        imageArray.push(newImg);
+        randomNumArray.push(newRandom);
     }
     
     counter++;
 }
+
+// pushing images to the array, which are numerated by each random number element
+randomNumArray.forEach(number => imageArray.push(`img/box${number}.png`));
 
 // Counter is for iterating through the elements by class name
 // getElementById() is best practice but I've stuck with this for the time being
