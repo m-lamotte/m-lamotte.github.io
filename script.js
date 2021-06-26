@@ -10,7 +10,7 @@ let imageArray = [];
 let counter = 0;
 
 
-// while loop for generating unique random numbers, which are inserted into an array
+// while loop for generating unique random numbers, which are inserted into randomNumArray
 while (counter < 5) {    
 
     let newRandom = getRandomNum(5);
@@ -25,14 +25,14 @@ while (counter < 5) {
     counter++;
 }
 
-// pushing images to the array, which are numerated by each random number element
+// pushing images to imageArray, which are numerated by each random number in randomNumArray
 randomNumArray.forEach(number => imageArray.push(`img/box${number}.png`));
 
-// Counter is for iterating through the elements by class name
-// getElementById() is best practice but I've stuck with this for the time being
+// counter is for iterating through the elements *by class name*
+// I know that getElementById() is best practice... but I've stuck with this for the time being
 counter = 0;
 
-// forEach for dynamically creating the elements each time page is loaded
+// dynamically creating the elements each time page is loaded
 imageArray.forEach(image => {
 
     let newImage = document.createElement("IMG");
