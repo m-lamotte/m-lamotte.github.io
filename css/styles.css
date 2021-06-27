@@ -123,14 +123,33 @@ section {
 }
 
 .about-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: .1fr 2fr 2fr;
+    grid-template-rows: 1fr;
     font-size: 1.1rem;
-    padding: 120px 60px 120px 60px;
+    padding: 80px 60px 120px 60px;
 }
 
-/* TODO: This will be where my -potentially- animated self-portrait will go */
+.about-section p {
+    padding: 0px 20px 0px 20px;
+    font-size: 1rem;
+}
+
+/* TODO: Find out how to keep the aspect-ratio of these grid sectiosn
+ *       completely consistent when changing screen size. Same for the media queries.       
+ */
+
 .self-portrait {
-  
+  display: grid;
+  width: 30vw;
+  height: 55vh;
+  border: solid 1px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.portrait {
+    border: solid 1px;
 }
 
 /* Where the sketches go, .box items are children of .sketches-section */

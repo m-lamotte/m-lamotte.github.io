@@ -1,6 +1,251 @@
 /* TODO: Refactor! Lots of redundant code in both of these media queries, which are nearly identical */
 
+/* NOTE: Order is from largest to smallest, in terms of screen size */
+
+
+/**********************************/
+/* SOME LAPTOPS / SMALLER SCREENS */
+/**********************************/
+
+@media screen and (min-width: 701px) and (max-width:1100px) {   
+    nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #3B765D;
+        overflow: auto;
+    }
+
+    .brand-logo a {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+
+   
+    .brand-logo a img {
+        max-width: 10%;
+    }
+
+    /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
+    #navigation-bar ul { 
+        display: flex;
+        margin: 0px;
+        justify-content: center;
+        padding: 10px 20px 10px 10px;
+        list-style: none;
+    }
+
+    .intro-statement {
+        font-size: 2rem;
+        padding: 60px 40px 60px 40px;
+    }
+
+    .personal-statement {
+        padding: 0px 40px 60px 40px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 120px 40px 120px 40px;
+    }
+
+    .about-section p {
+        margin: 40px 40px 0px 40px;
+    }
+
+    .self-portrait {
+        display: grid;
+        justify-self: center;
+        width: 60vw;
+        border: solid 1px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+    /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
+    .portfolio {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolio li {
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .portfolio li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    section {
+        flex: 1;
+        padding: 120px 40px 120px 40px;
+    }
+
+    /* Footer section */
+    footer .footer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    footer .footer a {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        overflow: auto;
+    }
+    
+    footer .footer a img {
+        width: 30%;
+    }
+    
+    /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
+    .copyright-overlay {
+        position: absolute;
+        font-size: .5rem;
+        right: 15px;
+        top: 8px;
+    }
+}
+
+
+/********************************/
+/* SOME TABLETS / SMALL LAPTOPS */
+/********************************/
+
+@media screen and (min-width: 481px) and (max-width:700px) {   
+    nav { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #3B765D;
+        overflow: auto;
+    }
+
+    .brand-logo a {
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+
+   
+    .brand-logo a img {
+        max-width: 16%;
+    }
+
+    /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
+    #navigation-bar ul { 
+        display: flex;
+        margin: 0px;
+        justify-content: center;
+        padding: 10px 20px 10px 10px;
+        list-style: none;
+    }
+
+    .intro-statement {
+        font-size: 2rem;
+        padding: 60px 40px 60px 40px;
+    }
+
+    .personal-statement {
+        padding: 0px 40px 60px 40px;
+    }
+
+    .about-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        padding: 120px 40px 120px 40px;
+    }
+
+    .about-section p {
+        margin: 40px 40px 0px 40px;
+    }
+
+    .self-portrait {
+        display: grid;
+        justify-self: center;
+        width: 60vw;
+        border: solid 1px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
+
+    /* Hiding images within .sketches-section to improve experience for tablets etc. */
+    .box:nth-child(3) {
+        display: none;
+    }
+
+    /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
+    .portfolio {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .portfolio li {
+        padding: 60px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .portfolio li a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    section {
+        flex: 1;
+        padding: 120px 40px 120px 40px;
+    }
+
+    /* Footer section */
+    footer .footer {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    footer .footer a {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px 10px 0px;
+        overflow: auto;
+    }
+    
+    footer .footer a img {
+        width: 30%;
+    }
+    
+    /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
+    .copyright-overlay {
+        position: absolute;
+        font-size: .5rem;
+        right: 15px;
+        top: 8px;
+    }
+}
+
+
+/***************/
 /* SMARTPHONES */
+/***************/
+
 @media screen and (max-width:480px) {
      
     nav { 
@@ -42,9 +287,24 @@
     }
 
     .about-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
         padding: 120px 40px 120px 40px;
     }
 
+    .about-section p {
+        margin: 40px 40px 0px 40px;
+    }
+
+    .self-portrait {
+        display: grid;
+        justify-self: center;
+        width: 60vw;
+        height: 40vh;
+        border: solid 1px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      }
     /* Hiding images within .sketches-section to improve experience for tablets etc. */
     .box:nth-child(3) {
         display: none;
@@ -126,204 +386,3 @@
     }
 }
 
-/* SOME TABLETS / SMALL LAPTOPS */
-@media screen and (min-width: 481px) and (max-width:700px) {   
-    nav { 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: #3B765D;
-        overflow: auto;
-    }
-
-    .brand-logo a {
-        display: flex;
-        justify-content: center;
-        overflow: auto;
-    }
-
-   
-    .brand-logo a img {
-        max-width: 16%;
-    }
-
-    /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
-    #navigation-bar ul { 
-        display: flex;
-        margin: 0px;
-        justify-content: center;
-        padding: 10px 20px 10px 10px;
-        list-style: none;
-    }
-
-    .intro-statement {
-        font-size: 2rem;
-        padding: 60px 40px 60px 40px;
-    }
-
-    .personal-statement {
-        padding: 0px 40px 60px 40px;
-    }
-
-    .about-section {
-        padding: 120px 40px 120px 40px;
-    }
-
-    /* Hiding images within .sketches-section to improve experience for tablets etc. */
-    .box:nth-child(3) {
-        display: none;
-    }
-
-    /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
-    .portfolio {
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .portfolio li {
-        padding: 60px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    .portfolio li a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    section {
-        flex: 1;
-        padding: 120px 40px 120px 40px;
-    }
-
-    /* Footer section */
-    footer .footer {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        overflow: hidden;
-    }
-    
-    footer .footer a {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0px 10px 0px;
-        overflow: auto;
-    }
-    
-    footer .footer a img {
-        width: 30%;
-    }
-    
-    /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
-    .copyright-overlay {
-        position: absolute;
-        font-size: .5rem;
-        right: 15px;
-        top: 8px;
-    }
-}
-
-
-/* SOME LAPTOPS / SMALLER SCREENS */
-@media screen and (min-width: 701px) and (max-width:1100px) {   
-    nav { 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: #3B765D;
-        overflow: auto;
-    }
-
-    .brand-logo a {
-        display: flex;
-        justify-content: center;
-        overflow: auto;
-    }
-
-   
-    .brand-logo a img {
-        max-width: 10%;
-    }
-
-    /* NOTE: The uneven padding on the right is to improve the perception of the ul being centered when using a smartphone */
-    #navigation-bar ul { 
-        display: flex;
-        margin: 0px;
-        justify-content: center;
-        padding: 10px 20px 10px 10px;
-        list-style: none;
-    }
-
-    .intro-statement {
-        font-size: 2rem;
-        padding: 60px 40px 60px 40px;
-    }
-
-    .personal-statement {
-        padding: 0px 40px 60px 40px;
-    }
-
-    .about-section {
-        padding: 120px 40px 120px 40px;
-    }
-
-    /* NOTE: 'flex-wrap: wrap' fixed my issue of the non-adaptive container items... but h'why? */
-    .portfolio {
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .portfolio li {
-        padding: 60px;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    .portfolio li a {
-        text-decoration: none;
-        color: #FFFFFF;
-    }
-
-    section {
-        flex: 1;
-        padding: 120px 40px 120px 40px;
-    }
-
-    /* Footer section */
-    footer .footer {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        overflow: hidden;
-    }
-    
-    footer .footer a {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0px 10px 0px;
-        overflow: auto;
-    }
-    
-    footer .footer a img {
-        width: 30%;
-    }
-    
-    /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
-    .copyright-overlay {
-        position: absolute;
-        font-size: .5rem;
-        right: 15px;
-        top: 8px;
-    }
-}
