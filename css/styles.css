@@ -133,8 +133,9 @@ by the media queries.   */
 
 .about-section {
     display: grid;
-    grid-template-columns: .1fr 2fr 2fr;
+    grid-template-columns: .3fr 2fr 2fr;
     grid-template-rows: 1fr;
+    align-items: center;
     font-size: 1.1rem;
     padding: 80px 60px 120px 60px;
 }
@@ -150,7 +151,7 @@ by the media queries.   */
 
 .self-portrait {
   display: grid;
-  width: 30vw;
+  width: 33vw;
   height: 55vh;
   border: solid 1px;
   grid-template-columns: 1fr 1fr;

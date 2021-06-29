@@ -55,7 +55,7 @@
     .self-portrait {
         display: grid;
         justify-self: center;
-        width: 60vw;
+        width: 45vw;
         border: solid 1px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -151,7 +151,7 @@
     .self-portrait {
         display: grid;
         justify-self: center;
-        width: 60vw;
+        width: 50vw;
         border: solid 1px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
