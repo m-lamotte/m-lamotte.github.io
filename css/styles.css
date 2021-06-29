@@ -1,5 +1,12 @@
 /* Removes all of the CSS defaults in the browser*/
 /* border-box includes both padding and border into the total width and height (w3schools) */
+
+/* TODO: Fix the aspect-ratio scaling for the portrait grid. */
+/* TODO: Add single self-portrait drawings for each portrait grid portion. */
+/* TODO: Animate self-portraits for each grid portion, active on hover. */
+/* TODO: Draw images for index page section boxes. */
+/* TODO: Fix the scaling on the brand logo... */
+
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +41,14 @@ h1 {
 
 li {
     font-size: 1.1rem;
+}
+
+/* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
+/* TODO: Refactor! I need to be consistent across sections. Not being applied in 'portfolio' */
+section {
+    flex: 1;
+    font-size: 1.1rem;
+    padding: 120px 60px 120px 60px;
 }
 
 #navigation-bar a {
@@ -96,12 +111,6 @@ by the media queries.   */
     filter: brightness(120%);
 }
 
-/* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
-section {
-    flex: 1;
-    font-size: 1.1rem;
-    padding: 120px 60px 120px 60px;
-}
 
 /* NOTE: Overriding some stuff for section, just for index.html page*/
 .index-section {
@@ -149,6 +158,9 @@ section {
 }
 
 .portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: solid 1px;
 }
 
@@ -174,54 +186,36 @@ section {
     height: auto;
 }
 
+/* NOTE: Used with section...  */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 /* Portfolio container, within section tag */
-.portfolio {
-    padding: 0px;
+/* TODO: Have entire grid shrink dynamically */
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+    gap: 20px;
+   
+}
+
+.project {
     display: flex;
-    flex: 1;
     justify-content: center;
-}
-
-.portfolio li {
-    padding: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-.portfolio li:hover {
-    opacity: .9;
-    filter: brightness(120%); 
-}
-
-.portfolio li a {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-/* IDs in portfolio container */
-/* TODO: Add stylish hover effects for these project items */
-#project1 {
+    align-items: center;
     width: 400px;
     height: 300px;
     background-color: #3D7D9C;
-    margin: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
-#project2 {
-    width: 400px;
-    height: 300px;
-    background-color: #649DB8;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-#project3 {
-    width: 400px;
-    height: 300px;
-    background-color: #16467B;
-    margin: 20px;
-    border-radius: 15px;
+.project:hover {
+    opacity: .9;
+    filter: brightness(120%); 
 }
 
 /* Footer section */
