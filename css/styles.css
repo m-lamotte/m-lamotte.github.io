@@ -34,6 +34,14 @@ h3 {
     color: #FFF;
 }
 
+h4 {
+    font-size: 1.2vmax;
+}
+
+dd {
+    font-size: 1vmax;    
+}
+
 /* NOTE: used to position images on top of cards */
 a {
     position: absolute;
@@ -44,6 +52,8 @@ a {
 a img {
     width: 70px;
 }
+
+
 
 /* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
 /* TODO: Refactor! I need to be consistent across sections. Not being applied in 'portfolio' */
