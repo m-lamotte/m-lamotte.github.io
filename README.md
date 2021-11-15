@@ -1,12 +1,6 @@
 # nlamo.github.io
-Personal website
+Personal startpage
 
-TODO:
+*** NOTE ***
 
-- Update personal logo and shrink element container size to fit logo size.
-- Add images to the title screen... consider something simpler than your previous ideation.
-- Add self-portrait beside description in 'About' section, refactor relevant media queries.
-- Potentially have some kind of an animation/transition for the self-portrait.
-- Get a real domain name and upload the website so that you can make it dynamic (add PHP, for example).
-- For the future, add a 'Contact' section that will include a form in PHP.
-- Change the 'Portfolio' section boxes, make the CSS a bit more modern.
+Previously this was a 'personal portfolio website', but I was ultimately unhappy with it and so I decided to turn it into a simple startpage that I'll just continue to modify and add to as time goes on; something of a simple sandbox for basic front-end, really.

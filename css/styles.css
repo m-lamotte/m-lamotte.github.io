@@ -1,12 +1,5 @@
 /* Removes all of the CSS defaults in the browser*/
 /* border-box includes both padding and border into the total width and height (w3schools) */
-
-/* TODO: Fix the aspect-ratio scaling for the portrait grid. */
-/* TODO: Add single self-portrait drawings for each portrait grid portion. */
-/* TODO: Animate self-portraits for each grid portion, active on hover. */
-/* TODO: Draw images for index page section boxes. */
-/* TODO: Fix the scaling on the brand logo... */
-
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +7,7 @@
 }
 
 html, body {
-    font-family: 'Sen', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
     font-size: .97rem;
     min-height: 100vh;
     line-height: 2.0em;
@@ -23,205 +16,45 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    background-color: rgba(2, 2, 2, 0.884);
 }
 
 /* All the navigation bar stuff for the top */
 nav { 
     display: flex;
-    justify-content: space-between;
-    background-color: #3B765D;
-    opacity: 1;
-    overflow: auto;
+    height: 50px;
     padding: 0px 30px;
+    background-color: #335278;
+    opacity: .8;
+    overflow: auto;
+
 }
 
-h1 {
-    padding: 20px 15px 15px 15px;
+h3 {
+    color: #FFF;
 }
 
-li {
-    font-size: 1.1rem;
+/* NOTE: used to position images on top of cards */
+a {
+    position: absolute;
+    top: -10%;
+    left: 85%;
+}
+
+a img {
+    width: 70px;
 }
 
 /* NOTE: 'flex: 1' is the magic property that makes the sticky footer possible, so review it. */
 /* TODO: Refactor! I need to be consistent across sections. Not being applied in 'portfolio' */
 section {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
     font-size: 1.1rem;
-    padding: 120px 60px 120px 60px;
-}
-
-#navigation-bar a {
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-/* TODO: Once again, I am tasked with the image scaling problem. But... it needs to be high-resolution. */
-.brand-logo a {
-    display: flex;
-}
-
-.brand-logo a img {
-    padding-bottom: 10px;
-    max-width: 25%;
-}
-
-/* TODO: image works fine when low-pixel-count image is unaltered, but I need to find out how to scale a high resolution logo, as current solution is not ideal */
-#navigation-bar a img:hover {
-    opacity: .9;
-    filter: brightness(120%);
-}
-
-/* QUESTION: Why does 'margin-left: auto' push this to the right of navbar? */
-#navigation-bar ul { 
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    padding: 0px 20px 0px 20px;
-    list-style: none;
-}
-
-#navigation-bar ul li {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* Transparent bottom border to allow the hover effect (solid bottom border)
-to displace it. This prevents the the navbar from moving in the views created
-by the media queries.   */
-#navigation-bar li {
-    border-bottom: 2px solid transparent;
-}
-
-#navigation-bar li:hover {
-    border-bottom: 2px solid;
-    border-bottom-color: #E8FFF3;
-}
-
-#navigation-bar li a {
-    display: block;
-    padding: 0px 25px 0px 25px;
-    margin: 0px;
-    width: 100%;
-    height: 100%;
-}
-
-#navigation-bar li a:hover {
-    opacity: .9;
-    filter: brightness(120%);
-}
-
-
-/* NOTE: Overriding some stuff for section, just for index.html page*/
-.index-section {
-    padding: 60px 0px 0px 0px;
-}
-
-.intro-statement {
-    opacity: .9;
     padding: 60px 60px 0px 60px;
-    font-family: 'Permanent Marker', cursive;
-    font-size: 3.5rem;
-    padding-bottom: 4rem;
-}
-
-.personal-statement {
-    padding: 0px 60px 0px 60px;
-    font-size: 1.1rem;
-    padding-bottom: 4rem;
-}
-
-.about-section {
-    display: grid;
-    grid-template-columns: .3fr 2fr 2fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    font-size: 1.1rem;
-    padding: 80px 60px 120px 60px;
-}
-
-.about-section p {
-    padding: 0px 20px 0px 20px;
-    font-size: 1rem;
-}
-
-/* TODO: Find out how to keep the aspect-ratio of these grid sectiosn
- *       completely consistent when changing screen size. Same for the media queries.       
- */
-
-.self-portrait {
-  display: grid;
-  width: 33vw;
-  height: 55vh;
-  border: solid 1px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.portrait {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px;
-}
-
-/* Where the sketches go, .box items are children of .sketches-section */
-.sketches-section {
-    padding: 0px;
-    padding-bottom: 4rem;
-    display: flex;
-    flex: 1;
-    justify-content: center;
-}
-
-.box {
-    border-top: #385278 solid;
-    border-bottom: #335278 solid;
-    padding: 0px;
-}
-
-.box img {
-    display: block;
-    opacity: .6;
-    width: 100%;
-    height: auto;
-}
-
-/* NOTE: Used with section...  */
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-/* Portfolio container, within section tag */
-/* TODO: Have entire grid shrink dynamically */
-.portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(400px, 1fr));
-    gap: 20px;
-   
-}
-
-.project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 300px;
-    background-color: #3D7D9C;
-    border-radius: 10px;
-}
-
-.project:hover {
-    opacity: .9;
-    filter: brightness(120%); 
 }
 
 /* Footer section */
-/* NOTE: padding-left is kind of a hacky solution to centering, but works across queries so it's fine... for now */
-/* NOTE: review 'flex-shrink' - this is working in tandem with 'flex: 1' in section to allow for stick footer */
 footer .footer {
     display: flex;
     position: relative;
@@ -239,6 +72,52 @@ footer .footer a {
 
 footer .footer a img {
     width: 40%;
+}
+
+/* Utility classes */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 80vw;
+    height: 50vh;
+}
+
+.card {
+    background: rgb(190,190,198);
+    background: linear-gradient(207deg, rgba(190,190,198,1) 0%, rgba(203,203,203,1) 39%, rgba(136,165,171,1) 100%);
+    border: 3px solid #335278;
+    position: relative;
+    height: 80%;
+    width: 17%;
+    margin: 25px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow: visible;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 17% 0px 17%;
+    padding: 1% 2% 1% 2%;
+    border: 1px solid slategrey;
+}
+
+.text-box-white {
+    display: flex;
+    align-items: center;
+    color: #FFF;
 }
 
 /* The right/top feels... really hacky and it behaves weirdly with large pixel sizes. Doesn't compute. Refactor with grid in the future. */
