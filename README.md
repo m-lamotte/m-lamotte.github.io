@@ -1,5 +1,7 @@
 # nlamo.github.io
+
 Personal startpage
+
 https://nlamo.github.io/
 
 ********
